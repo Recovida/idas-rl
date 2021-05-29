@@ -1,0 +1,6 @@
+[submodule "idas-rl-core"]
+	path = idas-rl-core
+	url = git@gitlab.com:recovida/idas-rl-core.git
+[submodule "idas-rl-gui"]
+	path = idas-rl-gui
+	url = git@gitlab.com:recovida/idas-rl-gui.git
