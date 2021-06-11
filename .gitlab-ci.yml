@@ -16,6 +16,7 @@ build-job:
   stage: build
   script:
     - echo "Compiling the code..."
+    - mvn --version
     - mvn package
     - echo "Compile complete."
 
