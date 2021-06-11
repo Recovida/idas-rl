@@ -1,10 +1,12 @@
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
+  MAVEN_OPTS: "-Dmaven.repo.local=${CI_PROJECT_DIR}/.m2/repository"
 
 cache:
   key: "${CI_COMMIT_REF_SLUG}"
   paths:
-    - /root/.m2/repository/
+    - .m2/repository/
+    - target
 
 image:
   maven:3.8.1-jdk-11
