@@ -1,6 +1,13 @@
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
+cache:
+  paths:
+    - .m2/repository
+
+image:
+  3.8.1-jdk-8
+
 stages:    
   - build     
   - deploy
