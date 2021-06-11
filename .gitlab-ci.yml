@@ -2,8 +2,10 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 cache:
+  key: "$CI_BUILD_REF"
   paths:
     - .m2/repository
+  untracked: true
 
 image:
   maven:3.8.1-jdk-11
@@ -15,6 +17,7 @@ stages:
 build-job:       
   stage: build
   script:
+    - echo "$CI_BUILDS_DIR"
     - echo "Compiling the code..."
     - mvn --version
     - mvn package
