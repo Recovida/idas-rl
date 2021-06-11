@@ -5,6 +5,7 @@ stages:
 build-job:       
   stage: build
   script:
+    - git pull --recurse-submodules
     - ls -R
     - echo "Compiling the code..."
     - echo "Compile complete."
