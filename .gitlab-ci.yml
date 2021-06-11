@@ -2,7 +2,7 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 cache:
-  key: "$CI_BUILD_REF"
+  key: "${CI_COMMIT_REF_SLUG}"
   paths:
     - .m2/repository/
 
