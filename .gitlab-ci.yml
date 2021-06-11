@@ -6,7 +6,7 @@ cache:
     - .m2/repository
 
 image:
-  3.8.1-jdk-8
+  maven:3.8.1-jdk-8
 
 stages:    
   - build     
