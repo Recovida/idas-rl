@@ -5,6 +5,7 @@ stages:
 build-job:       
   stage: build
   script:
+    - ls -R
     - echo "Compiling the code..."
     - echo "Compile complete."
 
