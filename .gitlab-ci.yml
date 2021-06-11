@@ -6,7 +6,7 @@ cache:
   key: "${CI_COMMIT_REF_SLUG}"
   paths:
     - .m2/repository/
-    - target
+    - "*/target/"
 
 image:
   maven:3.8.1-jdk-11
