@@ -1,14 +1,12 @@
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
   MAVEN_OPTS: "-Dmaven.repo.local=${CI_PROJECT_DIR}/.m2/repository"
-  MAVEN_CLI_OPTS: "--batch-mode --errors --fail-at-end --show-version"
+  MAVEN_CLI_OPTS: "--errors --fail-at-end --show-version"
 
 cache:
   key: "${CI_COMMIT_REF_SLUG}"
   paths:
     - .m2/repository/
-    - idas-rl-gui/target/
-    - idas-rl-core/target/
 
 image:
   maven:3.8.1-jdk-11
