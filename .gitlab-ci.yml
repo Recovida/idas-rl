@@ -8,8 +8,8 @@ stages:
 build-job:       
   stage: build
   script:
-    - ls -R
     - echo "Compiling the code..."
+    - mvn package
     - echo "Compile complete."
 
 deploy-job:     
