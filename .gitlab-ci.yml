@@ -16,7 +16,7 @@ stages:
 build-job:       
   stage: build
   script:
-    - echo "$CI_BUILDS_DIR"
+    - echo "$CI_COMMIT_REF_SLUG"
     - echo "Compiling the code..."
     - mvn package
     - echo "Compile complete."
