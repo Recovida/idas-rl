@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>recovida</groupId>
 	<artifactId>idas-rl</artifactId>
-	<version>1.0.5</version>
+	<version>1.0.6-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>IDaS-RL Parent</name>
 	<description>Parent project created so that Maven can properly handle the dependency between the other two projects</description>
